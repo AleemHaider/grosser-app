@@ -1,0 +1,4 @@
+#Wed Sep 23 01:53:24 PDT 2020
+base.0=H\:\\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\\flutter_application\\build\\app\\intermediates\\dex\\debug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
