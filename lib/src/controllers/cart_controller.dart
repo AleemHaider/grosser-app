@@ -81,7 +81,9 @@ class CartController extends ControllerMVC {
     removeCart(_cart).then((value) {
       calculateSubtotal();
       scaffoldKey?.currentState?.showSnackBar(SnackBar(
-        content: Text(S.of(context).the_product_was_removed_from_your_cart(_cart.product.name)),
+        content: Text(S
+            .of(context)
+            .the_product_was_removed_from_your_cart(_cart.product.name)),
       ));
     });
   }
@@ -100,7 +102,8 @@ class CartController extends ControllerMVC {
     if (Helper.canDelivery(carts[0].product.market, carts: carts)) {
       deliveryFee = carts[0].product.market.deliveryFee;
     }
-    taxAmount = (subTotal + deliveryFee) * carts[0].product.market.defaultTax / 100;
+    taxAmount =
+        (subTotal + deliveryFee) * carts[0].product.market.defaultTax / 100;
     total = subTotal + taxAmount + deliveryFee;
     setState(() {});
   }

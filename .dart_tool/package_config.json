@@ -15,7 +15,7 @@
     },
     {
       "name": "android_intent",
-      "rootUri": "file:///G:/flutter/.pub-cache/hosted/pub.dartlang.org/android_intent-0.3.7+3",
+      "rootUri": "file:///G:/flutter/.pub-cache/hosted/pub.dartlang.org/android_intent-0.3.7+4",
       "packageUri": "lib/",
       "languageVersion": "2.3"
     },
@@ -96,6 +96,30 @@
       "rootUri": "file:///G:/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.13",
       "packageUri": "lib/",
       "languageVersion": "2.3"
+    },
+    {
+      "name": "connectivity",
+      "rootUri": "file:///G:/flutter/.pub-cache/hosted/pub.dartlang.org/connectivity-0.4.9+3",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "connectivity_for_web",
+      "rootUri": "file:///G:/flutter/.pub-cache/hosted/pub.dartlang.org/connectivity_for_web-0.3.1+2",
+      "packageUri": "lib/",
+      "languageVersion": "2.6"
+    },
+    {
+      "name": "connectivity_macos",
+      "rootUri": "file:///G:/flutter/.pub-cache/hosted/pub.dartlang.org/connectivity_macos-0.1.0+5",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "connectivity_platform_interface",
+      "rootUri": "file:///G:/flutter/.pub-cache/hosted/pub.dartlang.org/connectivity_platform_interface-1.0.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
     },
     {
       "name": "convert",
@@ -218,6 +242,12 @@
       "languageVersion": "2.2"
     },
     {
+      "name": "flutter_offline",
+      "rootUri": "file:///G:/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_offline-0.2.4+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
       "name": "flutter_plugin_android_lifecycle",
       "rootUri": "file:///G:/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-1.0.9",
       "packageUri": "lib/",
@@ -279,7 +309,7 @@
     },
     {
       "name": "google_map_location_picker",
-      "rootUri": "file:///G:/flutter/.pub-cache/hosted/pub.dartlang.org/google_map_location_picker-3.3.3",
+      "rootUri": "file:///G:/flutter/.pub-cache/hosted/pub.dartlang.org/google_map_location_picker-3.2.0",
       "packageUri": "lib/",
       "languageVersion": "2.2"
     },
@@ -746,7 +776,7 @@
       "languageVersion": "2.2"
     }
   ],
-  "generated": "2020-09-23T08:49:04.675497Z",
+  "generated": "2020-09-25T09:07:25.444384Z",
   "generator": "pub",
   "generatorVersion": "2.9.2"
 }

@@ -54,33 +54,62 @@ class _PagesWidgetState extends State<PagesWidget> {
       widget.currentTab = tabItem;
       switch (tabItem) {
         case 0:
-          widget.currentPage = NotificationsWidget(parentScaffoldKey: widget.scaffoldKey);
+          widget.currentPage =
+              NotificationsWidget(parentScaffoldKey: widget.scaffoldKey);
           break;
         case 1:
-          widget.currentPage = MapWidget(parentScaffoldKey: widget.scaffoldKey, routeArgument: widget.routeArgument);
+          widget.currentPage = MapWidget(
+              parentScaffoldKey: widget.scaffoldKey,
+              routeArgument: widget.routeArgument);
           break;
         case 2:
-          widget.currentPage = HomeWidget(parentScaffoldKey: widget.scaffoldKey);
+          widget.currentPage =
+              HomeWidget(parentScaffoldKey: widget.scaffoldKey);
           break;
         case 3:
-          widget.currentPage = OrdersWidget(parentScaffoldKey: widget.scaffoldKey);
+          widget.currentPage =
+              OrdersWidget(parentScaffoldKey: widget.scaffoldKey);
           break;
         case 4:
-          widget.currentPage = FavoritesWidget(parentScaffoldKey: widget.scaffoldKey);
+          widget.currentPage =
+              FavoritesWidget(parentScaffoldKey: widget.scaffoldKey);
           break;
       }
     });
   }
 
+  Future<bool> _onBackPressed() {
+    return showDialog(
+          context: context,
+          builder: (context) => new AlertDialog(
+            title: new Text('Are you sure?'),
+            content: new Text('Do you want to exit an App'),
+            actions: <Widget>[
+              new GestureDetector(
+                onTap: () => Navigator.of(context).pop(false),
+                child: Text("NO"),
+              ),
+              SizedBox(height: 16),
+              new GestureDetector(
+                onTap: () => Navigator.of(context).pop(true),
+                child: Text("YES"),
+              ),
+            ],
+          ),
+        ) ??
+        false;
+  }
+
   @override
   Widget build(BuildContext context) {
     return WillPopScope(
-      onWillPop: Helper.of(context).onWillPop,
+      onWillPop: _onBackPressed,
       child: Scaffold(
         key: widget.scaffoldKey,
         drawer: DrawerWidget(),
         endDrawer: FilterWidget(onFilter: (filter) {
-          Navigator.of(context).pushReplacementNamed('/Pages', arguments: widget.currentTab);
+          Navigator.of(context)
+              .pushReplacementNamed('/Pages', arguments: widget.currentTab);
         }),
         body: widget.currentPage,
         bottomNavigationBar: BottomNavigationBar(
@@ -118,11 +147,18 @@ class _PagesWidgetState extends State<PagesWidget> {
                       Radius.circular(50),
                     ),
                     boxShadow: [
-                      BoxShadow(color: Theme.of(context).accentColor.withOpacity(0.4), blurRadius: 40, offset: Offset(0, 15)),
-                      BoxShadow(color: Theme.of(context).accentColor.withOpacity(0.4), blurRadius: 13, offset: Offset(0, 3))
+                      BoxShadow(
+                          color: Theme.of(context).accentColor.withOpacity(0.4),
+                          blurRadius: 40,
+                          offset: Offset(0, 15)),
+                      BoxShadow(
+                          color: Theme.of(context).accentColor.withOpacity(0.4),
+                          blurRadius: 13,
+                          offset: Offset(0, 3))
                     ],
                   ),
-                  child: new Icon(Icons.home, color: Theme.of(context).primaryColor),
+                  child: new Icon(Icons.home,
+                      color: Theme.of(context).primaryColor),
                 )),
             BottomNavigationBarItem(
               icon: new Icon(Icons.local_mall),

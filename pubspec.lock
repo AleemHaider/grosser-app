@@ -16,12 +16,12 @@ packages:
     source: hosted
     version: "0.39.17"
   android_intent:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: android_intent
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.3.7+3"
+    version: "0.3.7+4"
   archive:
     dependency: transitive
     description:
@@ -113,6 +113,34 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.14.13"
+  connectivity:
+    dependency: "direct main"
+    description:
+      name: connectivity
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.4.9+3"
+  connectivity_for_web:
+    dependency: transitive
+    description:
+      name: connectivity_for_web
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.3.1+2"
+  connectivity_macos:
+    dependency: transitive
+    description:
+      name: connectivity_macos
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.0+5"
+  connectivity_platform_interface:
+    dependency: transitive
+    description:
+      name: connectivity_platform_interface
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.6"
   convert:
     dependency: transitive
     description:
@@ -249,6 +277,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_offline:
+    dependency: "direct main"
+    description:
+      name: flutter_offline
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.2.4+1"
   flutter_plugin_android_lifecycle:
     dependency: transitive
     description:
@@ -288,7 +323,7 @@ packages:
     source: hosted
     version: "4.0.1"
   geolocator:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: geolocator
       url: "https://pub.dartlang.org"
@@ -321,7 +356,7 @@ packages:
       name: google_map_location_picker
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "3.3.3"
+    version: "3.2.0"
   google_maps_flutter:
     dependency: "direct main"
     description:

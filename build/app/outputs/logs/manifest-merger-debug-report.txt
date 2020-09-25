@@ -24,6 +24,7 @@ MERGED from [:fluttertoast] H:\grocery-food-pharmacy-store-delivery-mobile-app-w
 MERGED from [:location_permissions] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\location_permissions\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:sqflite] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:url_launcher] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-14:12
+MERGED from [:connectivity] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-10:12
 MERGED from [:path_provider] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:video_player] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\video_player\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:flutter_inappbrowser] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\flutter_inappbrowser\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-18:12
@@ -312,6 +313,8 @@ MERGED from [:sqflite] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-a
 MERGED from [:sqflite] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:url_launcher] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:url_launcher] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:connectivity] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:connectivity] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:path_provider] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:path_provider] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:video_player] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\video_player\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
@@ -508,6 +511,34 @@ ADDED from [:url_launcher] H:\grocery-food-pharmacy-store-delivery-mobile-app-wi
 		ADDED from [:url_launcher] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
 	android:name
 		ADDED from [:url_launcher] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:connectivity] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:17.4.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\8527d80f0d01e10298914dffbaaf5f93\jetified-play-services-measurement-api-17.4.1\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:17.4.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\8527d80f0d01e10298914dffbaaf5f93\jetified-play-services-measurement-api-17.4.1\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-iid:20.1.7] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\4d5a27e32ec068203749ff96dd3ba93d\jetified-firebase-iid-20.1.7\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:20.1.7] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\4d5a27e32ec068203749ff96dd3ba93d\jetified-firebase-iid-20.1.7\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\4fe428d6d4c0c50e742124a163c5d44c\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\4fe428d6d4c0c50e742124a163c5d44c\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.4.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\51608ee4768bc5b4140147d3f6c8a5da\jetified-play-services-measurement-impl-17.4.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.4.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\51608ee4768bc5b4140147d3f6c8a5da\jetified-play-services-measurement-impl-17.4.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\2c2819a55a9c4b78ebbc2d00750e51eb\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\2c2819a55a9c4b78ebbc2d00750e51eb\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-installations:16.3.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\3ed75a7bb99df342ff24603056d38443\jetified-firebase-installations-16.3.0\AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-installations:16.3.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\3ed75a7bb99df342ff24603056d38443\jetified-firebase-installations-16.3.0\AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.4.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\33d3eebb1d147018f4b03ee6dcf1ac37\jetified-play-services-measurement-sdk-api-17.4.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.4.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\33d3eebb1d147018f4b03ee6dcf1ac37\jetified-play-services-measurement-sdk-api-17.4.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.9.6] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\3a8bd8adeffbc931307d687e86535514\jetified-exoplayer-core-2.9.6\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.9.6] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\3a8bd8adeffbc931307d687e86535514\jetified-exoplayer-core-2.9.6\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\5558f413d2a7162becc6f59c328d6282\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\5558f413d2a7162becc6f59c328d6282\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\76ace01a579a1c417e7f33de2f1faa09\jetified-transport-runtime-2.2.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\76ace01a579a1c417e7f33de2f1faa09\jetified-transport-runtime-2.2.0\AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from [:connectivity] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [:connectivity] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-76
+	android:name
+		ADDED from [:connectivity] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-73
 activity#com.pichillilorenzo.flutter_inappbrowser.InAppBrowserActivity
 ADDED from [:flutter_inappbrowser] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\flutter_inappbrowser\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:47
 	android:configChanges
@@ -536,28 +567,6 @@ ADDED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Syed Aleem\.
 		ADDED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\eefe41196418cb014782bbe41612e9e4\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:40:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\eefe41196418cb014782bbe41612e9e4\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:39:17-119
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.gms:play-services-measurement-api:17.4.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\8527d80f0d01e10298914dffbaaf5f93\jetified-play-services-measurement-api-17.4.1\AndroidManifest.xml:23:5-79
-MERGED from [com.google.firebase:firebase-iid:20.1.7] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\4d5a27e32ec068203749ff96dd3ba93d\jetified-firebase-iid-20.1.7\AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-iid:20.1.7] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\4d5a27e32ec068203749ff96dd3ba93d\jetified-firebase-iid-20.1.7\AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\4fe428d6d4c0c50e742124a163c5d44c\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\4fe428d6d4c0c50e742124a163c5d44c\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-impl:17.4.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\51608ee4768bc5b4140147d3f6c8a5da\jetified-play-services-measurement-impl-17.4.1\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-impl:17.4.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\51608ee4768bc5b4140147d3f6c8a5da\jetified-play-services-measurement-impl-17.4.1\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\2c2819a55a9c4b78ebbc2d00750e51eb\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
-MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\2c2819a55a9c4b78ebbc2d00750e51eb\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
-MERGED from [com.google.firebase:firebase-installations:16.3.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\3ed75a7bb99df342ff24603056d38443\jetified-firebase-installations-16.3.0\AndroidManifest.xml:10:5-79
-MERGED from [com.google.firebase:firebase-installations:16.3.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\3ed75a7bb99df342ff24603056d38443\jetified-firebase-installations-16.3.0\AndroidManifest.xml:10:5-79
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.4.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\33d3eebb1d147018f4b03ee6dcf1ac37\jetified-play-services-measurement-sdk-api-17.4.1\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.4.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\33d3eebb1d147018f4b03ee6dcf1ac37\jetified-play-services-measurement-sdk-api-17.4.1\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.9.6] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\3a8bd8adeffbc931307d687e86535514\jetified-exoplayer-core-2.9.6\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.9.6] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\3a8bd8adeffbc931307d687e86535514\jetified-exoplayer-core-2.9.6\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\5558f413d2a7162becc6f59c328d6282\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:25:5-79
-MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\5558f413d2a7162becc6f59c328d6282\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:25:5-79
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\76ace01a579a1c417e7f33de2f1faa09\jetified-transport-runtime-2.2.0\AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\76ace01a579a1c417e7f33de2f1faa09\jetified-transport-runtime-2.2.0\AndroidManifest.xml:22:5-79
-	android:name
-		ADDED from [com.google.android.gms:play-services-measurement-api:17.4.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\8527d80f0d01e10298914dffbaaf5f93\jetified-play-services-measurement-api-17.4.1\AndroidManifest.xml:23:22-76
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [com.google.android.gms:play-services-measurement-api:17.4.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\8527d80f0d01e10298914dffbaaf5f93\jetified-play-services-measurement-api-17.4.1\AndroidManifest.xml:24:5-68
 MERGED from [com.google.firebase:firebase-iid:20.1.7] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\4d5a27e32ec068203749ff96dd3ba93d\jetified-firebase-iid-20.1.7\AndroidManifest.xml:24:5-68

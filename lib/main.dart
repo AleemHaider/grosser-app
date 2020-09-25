@@ -1,8 +1,12 @@
 import 'dart:io';
 
+import 'package:android_intent/android_intent.dart';
+import 'package:connectivity/connectivity.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:geolocator/geolocator.dart';
 import 'package:global_configuration/global_configuration.dart';
+import 'package:location/location.dart';
 
 import 'generated/l10n.dart';
 import 'route_generator.dart';
@@ -43,13 +47,51 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  Future _checkGps() async {
+    if (!(await Geolocator().isLocationServiceEnabled())) {
+      if (Theme.of(context).platform == TargetPlatform.android) {
+        showDialog(
+          context: context,
+          builder: (BuildContext context) {
+            return AlertDialog(
+              title: Text("Can't get gurrent location"),
+              content:
+                  const Text('Please make sure you enable GPS and try again'),
+              actions: <Widget>[
+                FlatButton(
+                  child: Text('Ok'),
+                  onPressed: () {
+                    final AndroidIntent intent = AndroidIntent(
+                        action: 'android.settings.LOCATION_SOURCE_SETTINGS');
+
+                    intent.launch();
+                    Navigator.of(context, rootNavigator: true).pop();
+                  },
+                ),
+              ],
+            );
+          },
+        );
+      }
+    }
+  }
+
   @override
   void initState() {
     settingRepo.initSettings();
     settingRepo.getCurrentLocation();
     userRepo.getCurrentUser();
     super.initState();
+    _checkGps();
   }
+
+  var location = Location();
+
+  // Future checkGps() async {
+  //   if (!await location.serviceEnabled()) {
+  //     location.requestService();
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {
