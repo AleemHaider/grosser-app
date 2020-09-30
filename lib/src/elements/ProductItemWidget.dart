@@ -1,16 +1,31 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:mvc_pattern/mvc_pattern.dart';
+import '../controllers/product_controller.dart';
 
 import '../helpers/helper.dart';
 import '../models/product.dart';
 import '../models/route_argument.dart';
 
-class ProductItemWidget extends StatelessWidget {
+class ProductItemWidget extends StatefulWidget {
   final String heroTag;
   final Product product;
+  final RouteArgument routeArgument;
 
-  const ProductItemWidget({Key key, this.product, this.heroTag}) : super(key: key);
+  const ProductItemWidget(
+      {Key key, this.product, this.heroTag, this.routeArgument})
+      : super(key: key);
 
+  @override
+  _ProductItemWidgetState createState() => _ProductItemWidgetState();
+}
+
+class _ProductItemWidgetState extends StateMVC<ProductItemWidget> {
+  ProductController con;
+
+  _ProductItemWidgetState() : super(ProductController()) {
+    con = controller;
+  }
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -18,28 +33,33 @@ class ProductItemWidget extends StatelessWidget {
       focusColor: Theme.of(context).accentColor,
       highlightColor: Theme.of(context).primaryColor,
       onTap: () {
-        Navigator.of(context).pushNamed('/Product', arguments: RouteArgument(id: product.id, heroTag: this.heroTag));
+        Navigator.of(context).pushNamed('/Product',
+            arguments: RouteArgument(
+                id: widget.product.id, heroTag: this.widget.heroTag));
       },
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
         decoration: BoxDecoration(
           color: Theme.of(context).primaryColor.withOpacity(0.9),
           boxShadow: [
-            BoxShadow(color: Theme.of(context).focusColor.withOpacity(0.1), blurRadius: 5, offset: Offset(0, 2)),
+            BoxShadow(
+                color: Theme.of(context).focusColor.withOpacity(0.1),
+                blurRadius: 5,
+                offset: Offset(0, 2)),
           ],
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             Hero(
-              tag: heroTag + product.id,
+              tag: widget.heroTag + widget.product.id,
               child: ClipRRect(
                 borderRadius: BorderRadius.all(Radius.circular(5)),
                 child: CachedNetworkImage(
                   height: 60,
                   width: 60,
                   fit: BoxFit.cover,
-                  imageUrl: product.image.thumb,
+                  imageUrl: widget.product.image.thumb,
                   placeholder: (context, url) => Image.asset(
                     'assets/img/loading.gif',
                     fit: BoxFit.cover,
@@ -60,16 +80,20 @@ class ProductItemWidget extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Text(
-                          product.name,
+                          widget.product.name,
                           overflow: TextOverflow.ellipsis,
                           maxLines: 2,
                           style: Theme.of(context).textTheme.subtitle1,
                         ),
                         Row(
-                          children: Helper.getStarsList(product.getRate()),
+                          children:
+                              Helper.getStarsList(widget.product.getRate()),
                         ),
                         Text(
-                          product.options.map((e) => e.name).toList().join(', '),
+                          widget.product.options
+                              .map((e) => e.name)
+                              .toList()
+                              .join(', '),
                           overflow: TextOverflow.ellipsis,
                           maxLines: 2,
                           style: Theme.of(context).textTheme.caption,
@@ -82,14 +106,46 @@ class ProductItemWidget extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: <Widget>[
                       Helper.getPrice(
-                        product.price,
+                        widget.product.price,
                         context,
                         style: Theme.of(context).textTheme.headline4,
                       ),
-                      product.discountPrice > 0
-                          ? Helper.getPrice(product.discountPrice, context,
-                              style: Theme.of(context).textTheme.bodyText2.merge(TextStyle(decoration: TextDecoration.lineThrough)))
+                      widget.product.discountPrice > 0
+                          ? Helper.getPrice(
+                              widget.product.discountPrice, context,
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .bodyText2
+                                  .merge(TextStyle(
+                                      decoration: TextDecoration.lineThrough)))
                           : SizedBox(height: 0),
+                      Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: <Widget>[
+                          IconButton(
+                            onPressed: () {
+                              con.decrementQuantity();
+                            },
+                            iconSize: 30,
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 5, vertical: 10),
+                            icon: Icon(Icons.remove_circle_outline),
+                            color: Theme.of(context).hintColor,
+                          ),
+                          Text(con.quantity.toString(),
+                              style: Theme.of(context).textTheme.subtitle1),
+                          IconButton(
+                            onPressed: () {
+                              con.incrementQuantity();
+                            },
+                            iconSize: 30,
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 5, vertical: 10),
+                            icon: Icon(Icons.add_circle_outline),
+                            color: Theme.of(context).hintColor,
+                          )
+                        ],
+                      ),
                     ],
                   ),
                 ],

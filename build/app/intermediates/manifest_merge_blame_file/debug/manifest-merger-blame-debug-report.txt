@@ -268,71 +268,94 @@
 152-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\4fe428d6d4c0c50e742124a163c5d44c\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:41:13-35
 153            android:exported="false"
 153-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\4fe428d6d4c0c50e742124a163c5d44c\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:42:13-37
-154            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- Needs to be explicitly declared on P+ -->
+154            android:permission="android.permission.BIND_JOB_SERVICE" />
 154-->[com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\4fe428d6d4c0c50e742124a163c5d44c\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:43:13-69
-155        <uses-library
-155-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\2c2819a55a9c4b78ebbc2d00750e51eb\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
-156            android:name="org.apache.http.legacy"
-156-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\2c2819a55a9c4b78ebbc2d00750e51eb\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
-157            android:required="false" />
-157-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\2c2819a55a9c4b78ebbc2d00750e51eb\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
-158
-159        <activity
-159-->[com.google.android.gms:play-services-base:17.2.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\00c69f4b2be489f249119ecfc3c42615\jetified-play-services-base-17.2.1\AndroidManifest.xml:23:9-26:75
-160            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-160-->[com.google.android.gms:play-services-base:17.2.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\00c69f4b2be489f249119ecfc3c42615\jetified-play-services-base-17.2.1\AndroidManifest.xml:24:13-79
-161            android:exported="false"
-161-->[com.google.android.gms:play-services-base:17.2.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\00c69f4b2be489f249119ecfc3c42615\jetified-play-services-base-17.2.1\AndroidManifest.xml:25:13-37
-162            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-162-->[com.google.android.gms:play-services-base:17.2.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\00c69f4b2be489f249119ecfc3c42615\jetified-play-services-base-17.2.1\AndroidManifest.xml:26:13-72
-163
-164        <provider
-164-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\bbf7540012ce1ee5c2bc77fbcaa6783e\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
-165            android:name="com.google.firebase.provider.FirebaseInitProvider"
-165-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\bbf7540012ce1ee5c2bc77fbcaa6783e\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
-166            android:authorities="com.smartersvision.markets.firebaseinitprovider"
-166-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\bbf7540012ce1ee5c2bc77fbcaa6783e\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
-167            android:exported="false"
-167-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\bbf7540012ce1ee5c2bc77fbcaa6783e\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
-168            android:initOrder="100" />
-168-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\bbf7540012ce1ee5c2bc77fbcaa6783e\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
-169
-170        <meta-data
-170-->[com.google.android.gms:play-services-basement:17.2.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\063cf5932a1d97ac5bc564d2547abfb6\jetified-play-services-basement-17.2.1\AndroidManifest.xml:23:9-25:69
-171            android:name="com.google.android.gms.version"
-171-->[com.google.android.gms:play-services-basement:17.2.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\063cf5932a1d97ac5bc564d2547abfb6\jetified-play-services-basement-17.2.1\AndroidManifest.xml:24:13-58
-172            android:value="@integer/google_play_services_version" />
-172-->[com.google.android.gms:play-services-basement:17.2.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\063cf5932a1d97ac5bc564d2547abfb6\jetified-play-services-basement-17.2.1\AndroidManifest.xml:25:13-66
-173
-174        <service
-174-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\5558f413d2a7162becc6f59c328d6282\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:29:9-35:19
-175            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-175-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\5558f413d2a7162becc6f59c328d6282\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:30:13-103
-176            android:exported="false" >
-176-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\5558f413d2a7162becc6f59c328d6282\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:31:13-37
-177            <meta-data
-177-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\5558f413d2a7162becc6f59c328d6282\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:32:13-34:39
-178                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-178-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\5558f413d2a7162becc6f59c328d6282\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:33:17-94
-179                android:value="cct" />
-179-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\5558f413d2a7162becc6f59c328d6282\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:34:17-36
-180        </service>
-181        <service
-181-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\76ace01a579a1c417e7f33de2f1faa09\jetified-transport-runtime-2.2.0\AndroidManifest.xml:26:9-30:19
-182            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-182-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\76ace01a579a1c417e7f33de2f1faa09\jetified-transport-runtime-2.2.0\AndroidManifest.xml:27:13-117
-183            android:exported="false"
-183-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\76ace01a579a1c417e7f33de2f1faa09\jetified-transport-runtime-2.2.0\AndroidManifest.xml:28:13-37
-184            android:permission="android.permission.BIND_JOB_SERVICE" >
-184-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\76ace01a579a1c417e7f33de2f1faa09\jetified-transport-runtime-2.2.0\AndroidManifest.xml:29:13-69
-185        </service>
-186
-187        <receiver
-187-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\76ace01a579a1c417e7f33de2f1faa09\jetified-transport-runtime-2.2.0\AndroidManifest.xml:32:9-34:40
-188            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-188-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\76ace01a579a1c417e7f33de2f1faa09\jetified-transport-runtime-2.2.0\AndroidManifest.xml:33:13-132
-189            android:exported="false" />
-189-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\76ace01a579a1c417e7f33de2f1faa09\jetified-transport-runtime-2.2.0\AndroidManifest.xml:34:13-37
-190    </application>
-191
-192</manifest>
+155
+156        <activity
+156-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\a40901e55ec60629eba4ad5f088ee8ba\jetified-play-services-auth-16.0.1\AndroidManifest.xml:23:9-27:75
+157            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+157-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\a40901e55ec60629eba4ad5f088ee8ba\jetified-play-services-auth-16.0.1\AndroidManifest.xml:24:13-93
+158            android:excludeFromRecents="true"
+158-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\a40901e55ec60629eba4ad5f088ee8ba\jetified-play-services-auth-16.0.1\AndroidManifest.xml:25:13-46
+159            android:exported="false"
+159-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\a40901e55ec60629eba4ad5f088ee8ba\jetified-play-services-auth-16.0.1\AndroidManifest.xml:26:13-37
+160            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+160-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\a40901e55ec60629eba4ad5f088ee8ba\jetified-play-services-auth-16.0.1\AndroidManifest.xml:27:13-72
+161        <!--
+162            Service handling Google Sign-In user revocation. For apps that do not integrate with
+163            Google Sign-In, this service will never be started.
+164        -->
+165        <service
+165-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\a40901e55ec60629eba4ad5f088ee8ba\jetified-play-services-auth-16.0.1\AndroidManifest.xml:33:9-36:110
+166            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+166-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\a40901e55ec60629eba4ad5f088ee8ba\jetified-play-services-auth-16.0.1\AndroidManifest.xml:34:13-89
+167            android:exported="true"
+167-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\a40901e55ec60629eba4ad5f088ee8ba\jetified-play-services-auth-16.0.1\AndroidManifest.xml:35:13-36
+168            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" /> <!-- Needs to be explicitly declared on P+ -->
+168-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\a40901e55ec60629eba4ad5f088ee8ba\jetified-play-services-auth-16.0.1\AndroidManifest.xml:36:13-107
+169        <uses-library
+169-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\2c2819a55a9c4b78ebbc2d00750e51eb\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+170            android:name="org.apache.http.legacy"
+170-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\2c2819a55a9c4b78ebbc2d00750e51eb\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+171            android:required="false" />
+171-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\2c2819a55a9c4b78ebbc2d00750e51eb\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+172
+173        <activity
+173-->[com.google.android.gms:play-services-base:17.2.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\00c69f4b2be489f249119ecfc3c42615\jetified-play-services-base-17.2.1\AndroidManifest.xml:23:9-26:75
+174            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+174-->[com.google.android.gms:play-services-base:17.2.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\00c69f4b2be489f249119ecfc3c42615\jetified-play-services-base-17.2.1\AndroidManifest.xml:24:13-79
+175            android:exported="false"
+175-->[com.google.android.gms:play-services-base:17.2.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\00c69f4b2be489f249119ecfc3c42615\jetified-play-services-base-17.2.1\AndroidManifest.xml:25:13-37
+176            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+176-->[com.google.android.gms:play-services-base:17.2.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\00c69f4b2be489f249119ecfc3c42615\jetified-play-services-base-17.2.1\AndroidManifest.xml:26:13-72
+177
+178        <provider
+178-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\bbf7540012ce1ee5c2bc77fbcaa6783e\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+179            android:name="com.google.firebase.provider.FirebaseInitProvider"
+179-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\bbf7540012ce1ee5c2bc77fbcaa6783e\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+180            android:authorities="com.smartersvision.markets.firebaseinitprovider"
+180-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\bbf7540012ce1ee5c2bc77fbcaa6783e\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+181            android:exported="false"
+181-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\bbf7540012ce1ee5c2bc77fbcaa6783e\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+182            android:initOrder="100" />
+182-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\bbf7540012ce1ee5c2bc77fbcaa6783e\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+183
+184        <meta-data
+184-->[com.google.android.gms:play-services-basement:17.2.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\063cf5932a1d97ac5bc564d2547abfb6\jetified-play-services-basement-17.2.1\AndroidManifest.xml:23:9-25:69
+185            android:name="com.google.android.gms.version"
+185-->[com.google.android.gms:play-services-basement:17.2.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\063cf5932a1d97ac5bc564d2547abfb6\jetified-play-services-basement-17.2.1\AndroidManifest.xml:24:13-58
+186            android:value="@integer/google_play_services_version" />
+186-->[com.google.android.gms:play-services-basement:17.2.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\063cf5932a1d97ac5bc564d2547abfb6\jetified-play-services-basement-17.2.1\AndroidManifest.xml:25:13-66
+187
+188        <service
+188-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\5558f413d2a7162becc6f59c328d6282\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:29:9-35:19
+189            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+189-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\5558f413d2a7162becc6f59c328d6282\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:30:13-103
+190            android:exported="false" >
+190-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\5558f413d2a7162becc6f59c328d6282\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:31:13-37
+191            <meta-data
+191-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\5558f413d2a7162becc6f59c328d6282\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:32:13-34:39
+192                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+192-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\5558f413d2a7162becc6f59c328d6282\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:33:17-94
+193                android:value="cct" />
+193-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\5558f413d2a7162becc6f59c328d6282\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:34:17-36
+194        </service>
+195        <service
+195-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\76ace01a579a1c417e7f33de2f1faa09\jetified-transport-runtime-2.2.0\AndroidManifest.xml:26:9-30:19
+196            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+196-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\76ace01a579a1c417e7f33de2f1faa09\jetified-transport-runtime-2.2.0\AndroidManifest.xml:27:13-117
+197            android:exported="false"
+197-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\76ace01a579a1c417e7f33de2f1faa09\jetified-transport-runtime-2.2.0\AndroidManifest.xml:28:13-37
+198            android:permission="android.permission.BIND_JOB_SERVICE" >
+198-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\76ace01a579a1c417e7f33de2f1faa09\jetified-transport-runtime-2.2.0\AndroidManifest.xml:29:13-69
+199        </service>
+200
+201        <receiver
+201-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\76ace01a579a1c417e7f33de2f1faa09\jetified-transport-runtime-2.2.0\AndroidManifest.xml:32:9-34:40
+202            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+202-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\76ace01a579a1c417e7f33de2f1faa09\jetified-transport-runtime-2.2.0\AndroidManifest.xml:33:13-132
+203            android:exported="false" />
+203-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\76ace01a579a1c417e7f33de2f1faa09\jetified-transport-runtime-2.2.0\AndroidManifest.xml:34:13-37
+204    </application>
+205
+206</manifest>

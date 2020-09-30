@@ -6,6 +6,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../generated/l10n.dart';
 import '../controllers/market_controller.dart';
+import '../controllers/product_controller.dart';
 import '../elements/CircularLoadingWidget.dart';
 import '../elements/GalleryCarouselWidget.dart';
 import '../elements/ProductItemWidget.dart';
@@ -39,6 +40,7 @@ class _DetailsWidgetState extends StateMVC<DetailsWidget> {
     _con.listenForGalleries(widget.routeArgument.id);
     _con.listenForFeaturedProducts(widget.routeArgument.id);
     _con.listenForMarketReviews(id: widget.routeArgument.id);
+
     super.initState();
   }
 

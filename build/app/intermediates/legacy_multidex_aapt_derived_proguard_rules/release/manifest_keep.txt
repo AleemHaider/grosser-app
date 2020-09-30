@@ -1,0 +1,4 @@
+# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:30
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:30
+-keep class com.smartersvision.markets.Application { <init>(); }

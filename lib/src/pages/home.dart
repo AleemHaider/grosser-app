@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:markets/src/models/route_argument.dart';
 import 'package:mvc_pattern/mvc_pattern.dart';
 
 import '../../generated/l10n.dart';
@@ -17,8 +18,9 @@ import '../repository/user_repository.dart';
 
 class HomeWidget extends StatefulWidget {
   final GlobalKey<ScaffoldState> parentScaffoldKey;
-
-  HomeWidget({Key key, this.parentScaffoldKey}) : super(key: key);
+  final RouteArgument routeArgument;
+  HomeWidget({Key key, this.parentScaffoldKey, this.routeArgument})
+      : super(key: key);
 
   @override
   _HomeWidgetState createState() => _HomeWidgetState();
@@ -77,14 +79,25 @@ class _HomeWidgetState extends StateMVC<HomeWidget> {
                 case 'slider':
                   return HomeSliderWidget(slides: _con.slides);
                 case 'search':
-                  return Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
-                    child: SearchBarWidget(
-                      onClickFilter: (event) {
-                        widget.parentScaffoldKey.currentState.openEndDrawer();
-                      },
-                    ),
+                  return Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 20),
+                        child: SearchBarWidget(
+                          onClickFilter: (event) {
+                            widget.parentScaffoldKey.currentState
+                                .openEndDrawer();
+                          },
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(10.0),
+                        child: Text("Welcome to elakerShop - "),
+                      )
+                    ],
                   );
+
                 case 'top_markets_heading':
                   return Padding(
                     padding: const EdgeInsets.only(
@@ -203,6 +216,7 @@ class _HomeWidgetState extends StateMVC<HomeWidget> {
                 case 'top_markets':
                   return CardsCarouselWidget(
                       marketsList: _con.topMarkets,
+                      routeArgument: widget.routeArgument,
                       heroTag: 'home_top_markets');
                 case 'trending_week_heading':
                   return ListTile(

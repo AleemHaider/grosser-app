@@ -9,8 +9,11 @@ import 'CardWidget.dart';
 class CardsCarouselWidget extends StatefulWidget {
   List<Market> marketsList;
   String heroTag;
+  final RouteArgument routeArgument;
 
-  CardsCarouselWidget({Key key, this.marketsList, this.heroTag}) : super(key: key);
+  CardsCarouselWidget(
+      {Key key, this.marketsList, this.heroTag, this.routeArgument})
+      : super(key: key);
 
   @override
   _CardsCarouselWidgetState createState() => _CardsCarouselWidgetState();
@@ -40,7 +43,10 @@ class _CardsCarouselWidgetState extends State<CardsCarouselWidget> {
                           heroTag: widget.heroTag,
                         ));
                   },
-                  child: CardWidget(market: widget.marketsList.elementAt(index), heroTag: widget.heroTag),
+                  child: CardWidget(
+                      market: widget.marketsList.elementAt(index),
+                      heroTag: widget.heroTag,
+                      routeArgument: widget.routeArgument),
                 );
               },
             ),

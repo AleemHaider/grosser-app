@@ -59,6 +59,7 @@ class ProductController extends ControllerMVC {
 
   bool isSameMarkets(Product product) {
     if (carts.isNotEmpty) {
+      print('yes product worked');
       return carts[0].product?.market?.id == product.market?.id;
     }
     return true;
@@ -70,9 +71,12 @@ class ProductController extends ControllerMVC {
     });
     var _newCart = new Cart();
     _newCart.product = product;
-    _newCart.options = product.options.where((element) => element.checked).toList();
+    _newCart.options =
+        product.options.where((element) => element.checked).toList();
     _newCart.quantity = this.quantity;
     // if product exist in the cart then increment quantity
+    print("product is:::::::::::::::::::::::::::");
+    print(_newCart);
     var _oldCart = isExistInCart(_newCart);
     if (_oldCart != null) {
       _oldCart.quantity += this.quantity;
@@ -88,6 +92,7 @@ class ProductController extends ControllerMVC {
     } else {
       // the product doesnt exist in the cart add new one
       addCart(_newCart, reset).then((value) {
+        print('cart not loaded');
         setState(() {
           this.loadCart = false;
         });
@@ -100,7 +105,8 @@ class ProductController extends ControllerMVC {
   }
 
   Cart isExistInCart(Cart _cart) {
-    return carts.firstWhere((Cart oldCart) => _cart.isSame(oldCart), orElse: () => null);
+    return carts.firstWhere((Cart oldCart) => _cart.isSame(oldCart),
+        orElse: () => null);
   }
 
   void addToFavorite(Product product) async {
@@ -134,7 +140,8 @@ class ProductController extends ControllerMVC {
     var _id = product.id;
     product = new Product();
     listenForFavorite(productId: _id);
-    listenForProduct(productId: _id, message: S.of(context).productRefreshedSuccessfuly);
+    listenForProduct(
+        productId: _id, message: S.of(context).productRefreshedSuccessfuly);
   }
 
   void calculateTotal() {

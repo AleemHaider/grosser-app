@@ -1,5 +1,6 @@
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import 'package:mvc_pattern/mvc_pattern.dart';
 
 import '../../generated/l10n.dart';
@@ -15,6 +16,7 @@ class UserController extends ControllerMVC {
   GlobalKey<ScaffoldState> scaffoldKey;
   FirebaseMessaging _firebaseMessaging;
   OverlayEntry loader;
+  bool _isLoggedIn = false;
 
   UserController() {
     loader = Helper.overlayLoader(context);
@@ -35,7 +37,8 @@ class UserController extends ControllerMVC {
       Overlay.of(context).insert(loader);
       repository.login(user).then((value) {
         if (value != null && value.apiToken != null) {
-          Navigator.of(scaffoldKey.currentContext).pushReplacementNamed('/Pages', arguments: 2);
+          Navigator.of(scaffoldKey.currentContext)
+              .pushReplacementNamed('/Pages', arguments: 2);
         } else {
           scaffoldKey?.currentState?.showSnackBar(SnackBar(
             content: Text(S.of(context).wrong_email_or_password),
@@ -59,7 +62,8 @@ class UserController extends ControllerMVC {
       Overlay.of(context).insert(loader);
       repository.register(user).then((value) {
         if (value != null && value.apiToken != null) {
-          Navigator.of(scaffoldKey.currentContext).pushReplacementNamed('/Pages', arguments: 2);
+          Navigator.of(scaffoldKey.currentContext)
+              .pushReplacementNamed('/Pages', arguments: 2);
         } else {
           scaffoldKey?.currentState?.showSnackBar(SnackBar(
             content: Text(S.of(context).wrong_email_or_password),
@@ -84,11 +88,13 @@ class UserController extends ControllerMVC {
       repository.resetPassword(user).then((value) {
         if (value != null && value == true) {
           scaffoldKey?.currentState?.showSnackBar(SnackBar(
-            content: Text(S.of(context).your_reset_link_has_been_sent_to_your_email),
+            content:
+                Text(S.of(context).your_reset_link_has_been_sent_to_your_email),
             action: SnackBarAction(
               label: S.of(context).login,
               onPressed: () {
-                Navigator.of(scaffoldKey.currentContext).pushReplacementNamed('/Login');
+                Navigator.of(scaffoldKey.currentContext)
+                    .pushReplacementNamed('/Login');
               },
             ),
             duration: Duration(seconds: 10),
@@ -103,5 +109,34 @@ class UserController extends ControllerMVC {
         Helper.hideLoader(loader);
       });
     }
+  }
+
+  GoogleSignIn _googleSignIn = new GoogleSignIn(
+    scopes: [
+      'email',
+    ],
+  );
+  // initLogin() {
+  //   _googleSignIn.onCurrentUserChanged
+  //       .listen((GoogleSignInAccount account) async {
+  //     if (account != null) {
+  //       // user logged
+  //     } else {
+  //       // user NOT logged
+  //     }
+  //   });
+  //   _googleSignIn.signInSilently().whenComplete(() => showLoading(false));
+  // }
+
+  showLoading(isLoading) {
+    return isLoading ? CircularProgressIndicator() : Container();
+  }
+
+  doLogin() async {
+    showLoading(true);
+    await _googleSignIn.signIn().then((value) {
+      print(value.displayName);
+    });
+    _isLoggedIn = true;
   }
 }

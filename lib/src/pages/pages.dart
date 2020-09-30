@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:markets/src/elements/ShoppingCartButtonWidget.dart';
 
 import '../elements/DrawerWidget.dart';
 import '../elements/FilterWidget.dart';
@@ -54,8 +55,11 @@ class _PagesWidgetState extends State<PagesWidget> {
       widget.currentTab = tabItem;
       switch (tabItem) {
         case 0:
-          widget.currentPage =
-              NotificationsWidget(parentScaffoldKey: widget.scaffoldKey);
+          widget.currentPage = HomeWidget(
+            parentScaffoldKey: widget.scaffoldKey,
+            routeArgument: widget.routeArgument,
+          );
+
           break;
         case 1:
           widget.currentPage = MapWidget(
@@ -64,7 +68,7 @@ class _PagesWidgetState extends State<PagesWidget> {
           break;
         case 2:
           widget.currentPage =
-              HomeWidget(parentScaffoldKey: widget.scaffoldKey);
+              NotificationsWidget(parentScaffoldKey: widget.scaffoldKey);
           break;
         case 3:
           widget.currentPage =
@@ -74,6 +78,11 @@ class _PagesWidgetState extends State<PagesWidget> {
           widget.currentPage =
               FavoritesWidget(parentScaffoldKey: widget.scaffoldKey);
           break;
+        // case 5:
+        //   widget.currentPage = ShoppingCartButtonWidget(
+        //     iconColor: Theme.of(context).hintColor,
+        //     labelColor: Theme.of(context).accentColor,
+        //   );
       }
     });
   }
@@ -129,14 +138,6 @@ class _PagesWidgetState extends State<PagesWidget> {
           // this will be set when a new tab is tapped
           items: [
             BottomNavigationBarItem(
-              icon: Icon(Icons.notifications),
-              title: new Container(height: 0.0),
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.location_on),
-              title: new Container(height: 0.0),
-            ),
-            BottomNavigationBarItem(
                 title: new Container(height: 5.0),
                 icon: Container(
                   width: 42,
@@ -161,6 +162,14 @@ class _PagesWidgetState extends State<PagesWidget> {
                       color: Theme.of(context).primaryColor),
                 )),
             BottomNavigationBarItem(
+              icon: Icon(Icons.location_on),
+              title: new Container(height: 0.0),
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.notifications),
+              title: new Container(height: 0.0),
+            ),
+            BottomNavigationBarItem(
               icon: new Icon(Icons.local_mall),
               title: new Container(height: 0.0),
             ),
@@ -168,6 +177,10 @@ class _PagesWidgetState extends State<PagesWidget> {
               icon: new Icon(Icons.favorite),
               title: new Container(height: 0.0),
             ),
+            // BottomNavigationBarItem(
+            //   icon: new Icon(Icons.shopping_cart),
+            //   title: new Container(height: 0.0),
+            // )
           ],
         ),
       ),

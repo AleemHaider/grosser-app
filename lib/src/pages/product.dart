@@ -469,36 +469,41 @@ class _ProductWidgetState extends StateMVC<ProductWidget> {
                                           110,
                                       child: FlatButton(
                                         onPressed: () {
-                                          _con.addToCart(_con.product);
-
-                                          // if (currentUser.value.apiToken ==
-                                          //     null) {
-                                          //   Navigator.of(context)
-                                          //       .pushNamed("/Login");
-                                          // } else {
-                                          // if (_con
-                                          //     .isSameMarkets(_con.product)) {
-                                          //   _con.addToCart(_con.product);
-                                          // } else {
-                                          //   showDialog(
-                                          //     context: context,
-                                          //     builder: (BuildContext context) {
-                                          //       // return object of type Dialog
-                                          //       return AddToCartAlertDialogWidget(
-                                          //           oldProduct: _con.carts
-                                          //               .elementAt(0)
-                                          //               ?.product,
-                                          //           newProduct: _con.product,
-                                          //           onPressed: (product,
-                                          //               {reset: true}) {
-                                          //             return _con.addToCart(
-                                          //                 _con.product,
-                                          //                 reset: true);
-                                          //           });
-                                          //     },
-                                          //   );
+                                          // _con.addToCart(_con.product);
+                                          // // if (_con
+                                          // //     .isSameMarkets(_con.product)) {
+                                          // print("yes login work");
+                                          // _con.addToCart(_con.product);
                                           // }
-                                          // }
+                                          if (currentUser.value.apiToken ==
+                                              null) {
+                                            Navigator.of(context)
+                                                .pushNamed("/Login");
+                                          } else {
+                                            if (_con
+                                                .isSameMarkets(_con.product)) {
+                                              _con.addToCart(_con.product);
+                                            } else {
+                                              showDialog(
+                                                context: context,
+                                                builder:
+                                                    (BuildContext context) {
+                                                  // return object of type Dialog
+                                                  return AddToCartAlertDialogWidget(
+                                                      oldProduct: _con.carts
+                                                          .elementAt(0)
+                                                          ?.product,
+                                                      newProduct: _con.product,
+                                                      onPressed: (product,
+                                                          {reset: true}) {
+                                                        return _con.addToCart(
+                                                            _con.product,
+                                                            reset: true);
+                                                      });
+                                                },
+                                              );
+                                            }
+                                          }
                                         },
                                         padding:
                                             EdgeInsets.symmetric(vertical: 14),

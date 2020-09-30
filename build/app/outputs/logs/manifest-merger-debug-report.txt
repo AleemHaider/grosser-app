@@ -12,10 +12,11 @@ MERGED from [:flutter_plugin_android_lifecycle] H:\grocery-food-pharmacy-store-d
 MERGED from [:screen] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\screen\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:geolocator] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\geolocator\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:google_api_availability] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\google_api_availability\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:google_sign_in] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\google_sign_in\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:android_intent] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\android_intent\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:location_web] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\location_web\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:wakelock] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\wakelock\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:package_info] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\package_info\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:wakelock] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\wakelock\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:shared_preferences] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\shared_preferences\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:firebase_messaging] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-20:12
 MERGED from [:webview_flutter] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\webview_flutter\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
@@ -28,6 +29,7 @@ MERGED from [:connectivity] H:\grocery-food-pharmacy-store-delivery-mobile-app-w
 MERGED from [:path_provider] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:video_player] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\video_player\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:flutter_inappbrowser] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\flutter_inappbrowser\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-18:12
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\f9c6cf9bfafb8eab388d45f3e5c909e0\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\eefe41196418cb014782bbe41612e9e4\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:17:1-44:12
 MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\463f3fa1194181e7280ed1f1f3a546ce\appcompat-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.browser:browser:1.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\39a27e81d465ff0c6a90cc8054754da1\browser-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -44,7 +46,10 @@ MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\Syed Al
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\aa754b015020262d202b5a9ed0734ca2\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\a22be89e0235e39ca0e2f6cbdbd26f6b\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\4d47c0e87f7d39f754c86f326e502db9\jetified-play-services-location-16.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\a40901e55ec60629eba4ad5f088ee8ba\jetified-play-services-auth-16.0.1\AndroidManifest.xml:17:1-39:12
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\2c2819a55a9c4b78ebbc2d00750e51eb\jetified-play-services-maps-17.0.0\AndroidManifest.xml:17:1-38:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\97bccc815fb6c8397304000e7905d414\jetified-play-services-auth-api-phone-16.0.0\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\a308ceb8f5376bc055bc5e47ccf81ea8\jetified-play-services-auth-base-16.0.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\3d76a79dc136a35ecf7719bf629083d6\jetified-firebase-iid-interop-17.0.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-base:17.2.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\00c69f4b2be489f249119ecfc3c42615\jetified-play-services-base-17.2.1\AndroidManifest.xml:17:1-29:12
 MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\3e814b3120b567a5438b35507da72d18\jetified-play-services-places-placereport-16.0.0\AndroidManifest.xml:17:1-24:12
@@ -91,7 +96,6 @@ MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\
 MERGED from [com.google.firebase:firebase-components:16.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\4159605c371c9d664f5483684e0d8076\jetified-firebase-components-16.0.0\AndroidManifest.xml:15:1-23:12
 MERGED from [com.google.firebase:firebase-encoders-json:16.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\319c6bf8dc62570c356a47cb777bda3f\jetified-firebase-encoders-json-16.0.0\AndroidManifest.xml:15:1-23:12
 MERGED from [com.google.android.datatransport:transport-api:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\ac8a19a8de8405bd3536de75ee60c08a\jetified-transport-api-2.2.0\AndroidManifest.xml:15:1-22:12
-MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\f9c6cf9bfafb8eab388d45f3e5c909e0\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
 INJECTED from H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\android\app\src\debug\AndroidManifest.xml:1:1-9:12
 INJECTED from H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\android\app\src\debug\AndroidManifest.xml:1:1-9:12
 INJECTED from H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\android\app\src\debug\AndroidManifest.xml:1:1-9:12
@@ -113,6 +117,8 @@ uses-permission#android.permission.INTERNET
 ADDED from H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\android\app\src\main\AndroidManifest.xml:4:5-66
 MERGED from H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\android\app\src\main\AndroidManifest.xml:4:5-66
 MERGED from H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\android\app\src\main\AndroidManifest.xml:4:5-66
+MERGED from [:google_sign_in] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\google_sign_in\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-67
+MERGED from [:google_sign_in] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\google_sign_in\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:17.4.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\8527d80f0d01e10298914dffbaaf5f93\jetified-play-services-measurement-api-17.4.1\AndroidManifest.xml:22:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:17.4.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\8527d80f0d01e10298914dffbaaf5f93\jetified-play-services-measurement-api-17.4.1\AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-iid:20.1.7] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\4d5a27e32ec068203749ff96dd3ba93d\jetified-firebase-iid-20.1.7\AndroidManifest.xml:23:5-67
@@ -179,6 +185,8 @@ MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\Syed Al
 MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\fc571bd79e731574d204e2e0ae30d502\jetified-play-services-stats-17.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\4d47c0e87f7d39f754c86f326e502db9\jetified-play-services-location-16.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\4d47c0e87f7d39f754c86f326e502db9\jetified-play-services-location-16.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\a40901e55ec60629eba4ad5f088ee8ba\jetified-play-services-auth-16.0.1\AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\a40901e55ec60629eba4ad5f088ee8ba\jetified-play-services-auth-16.0.1\AndroidManifest.xml:22:5-37:19
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\2c2819a55a9c4b78ebbc2d00750e51eb\jetified-play-services-maps-17.0.0\AndroidManifest.xml:30:5-36:19
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\2c2819a55a9c4b78ebbc2d00750e51eb\jetified-play-services-maps-17.0.0\AndroidManifest.xml:30:5-36:19
 MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\3d76a79dc136a35ecf7719bf629083d6\jetified-firebase-iid-interop-17.0.0\AndroidManifest.xml:7:5-8:19
@@ -289,14 +297,16 @@ MERGED from [:geolocator] H:\grocery-food-pharmacy-store-delivery-mobile-app-wit
 MERGED from [:geolocator] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\geolocator\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:google_api_availability] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\google_api_availability\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:google_api_availability] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\google_api_availability\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:google_sign_in] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\google_sign_in\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:google_sign_in] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\google_sign_in\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:android_intent] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\android_intent\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:android_intent] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\android_intent\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:location_web] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\location_web\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:location_web] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\location_web\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:wakelock] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\wakelock\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:wakelock] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\wakelock\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:package_info] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\package_info\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:package_info] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\package_info\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:wakelock] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\wakelock\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:wakelock] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\wakelock\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:shared_preferences] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\shared_preferences\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:shared_preferences] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\shared_preferences\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:firebase_messaging] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
@@ -321,6 +331,8 @@ MERGED from [:video_player] H:\grocery-food-pharmacy-store-delivery-mobile-app-w
 MERGED from [:video_player] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\video_player\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_inappbrowser] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\flutter_inappbrowser\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_inappbrowser] H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\flutter_inappbrowser\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\f9c6cf9bfafb8eab388d45f3e5c909e0\multidex-2.0.0\AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\f9c6cf9bfafb8eab388d45f3e5c909e0\multidex-2.0.0\AndroidManifest.xml:20:5-43
 MERGED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\eefe41196418cb014782bbe41612e9e4\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-messaging:20.1.7] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\eefe41196418cb014782bbe41612e9e4\jetified-firebase-messaging-20.1.7\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\463f3fa1194181e7280ed1f1f3a546ce\appcompat-1.0.0\AndroidManifest.xml:20:5-44
@@ -353,8 +365,14 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\a22be89e0235e39ca0e2f6cbdbd26f6b\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\4d47c0e87f7d39f754c86f326e502db9\jetified-play-services-location-16.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\4d47c0e87f7d39f754c86f326e502db9\jetified-play-services-location-16.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\a40901e55ec60629eba4ad5f088ee8ba\jetified-play-services-auth-16.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\a40901e55ec60629eba4ad5f088ee8ba\jetified-play-services-auth-16.0.1\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\2c2819a55a9c4b78ebbc2d00750e51eb\jetified-play-services-maps-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\2c2819a55a9c4b78ebbc2d00750e51eb\jetified-play-services-maps-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\97bccc815fb6c8397304000e7905d414\jetified-play-services-auth-api-phone-16.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\97bccc815fb6c8397304000e7905d414\jetified-play-services-auth-api-phone-16.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\a308ceb8f5376bc055bc5e47ccf81ea8\jetified-play-services-auth-base-16.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\a308ceb8f5376bc055bc5e47ccf81ea8\jetified-play-services-auth-base-16.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\3d76a79dc136a35ecf7719bf629083d6\jetified-firebase-iid-interop-17.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\3d76a79dc136a35ecf7719bf629083d6\jetified-firebase-iid-interop-17.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-base:17.2.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\00c69f4b2be489f249119ecfc3c42615\jetified-play-services-base-17.2.1\AndroidManifest.xml:20:5-44
@@ -447,8 +465,6 @@ MERGED from [com.google.firebase:firebase-encoders-json:16.0.0] C:\Users\Syed Al
 MERGED from [com.google.firebase:firebase-encoders-json:16.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\319c6bf8dc62570c356a47cb777bda3f\jetified-firebase-encoders-json-16.0.0\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.android.datatransport:transport-api:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\ac8a19a8de8405bd3536de75ee60c08a\jetified-transport-api-2.2.0\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.android.datatransport:transport-api:2.2.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\ac8a19a8de8405bd3536de75ee60c08a\jetified-transport-api-2.2.0\AndroidManifest.xml:18:5-20:41
-MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\f9c6cf9bfafb8eab388d45f3e5c909e0\multidex-2.0.0\AndroidManifest.xml:20:5-43
-MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\f9c6cf9bfafb8eab388d45f3e5c909e0\multidex-2.0.0\AndroidManifest.xml:20:5-43
 INJECTED from H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\android\app\src\debug\AndroidManifest.xml
 INJECTED from H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\android\app\src\debug\AndroidManifest.xml
 	android:targetSdkVersion
@@ -641,6 +657,24 @@ ADDED from [com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Sy
 		ADDED from [com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\4fe428d6d4c0c50e742124a163c5d44c\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:43:13-69
 	android:name
 		ADDED from [com.google.android.gms:play-services-measurement:17.4.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\4fe428d6d4c0c50e742124a163c5d44c\jetified-play-services-measurement-17.4.1\AndroidManifest.xml:40:13-87
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\a40901e55ec60629eba4ad5f088ee8ba\jetified-play-services-auth-16.0.1\AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\a40901e55ec60629eba4ad5f088ee8ba\jetified-play-services-auth-16.0.1\AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\a40901e55ec60629eba4ad5f088ee8ba\jetified-play-services-auth-16.0.1\AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\a40901e55ec60629eba4ad5f088ee8ba\jetified-play-services-auth-16.0.1\AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\a40901e55ec60629eba4ad5f088ee8ba\jetified-play-services-auth-16.0.1\AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\a40901e55ec60629eba4ad5f088ee8ba\jetified-play-services-auth-16.0.1\AndroidManifest.xml:33:9-36:110
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\a40901e55ec60629eba4ad5f088ee8ba\jetified-play-services-auth-16.0.1\AndroidManifest.xml:35:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\a40901e55ec60629eba4ad5f088ee8ba\jetified-play-services-auth-16.0.1\AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\a40901e55ec60629eba4ad5f088ee8ba\jetified-play-services-auth-16.0.1\AndroidManifest.xml:34:13-89
 uses-feature#0x00020000
 ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\2c2819a55a9c4b78ebbc2d00750e51eb\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
 	android:glEsVersion

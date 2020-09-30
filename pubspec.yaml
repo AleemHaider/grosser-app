@@ -48,6 +48,7 @@ dependencies:
   flutter_offline: 0.2.4+1
   geolocator: ^5.2.0
   android_intent: ^0.3.7+4
+  google_sign_in: ^4.5.4
 
 dev_dependencies:
 

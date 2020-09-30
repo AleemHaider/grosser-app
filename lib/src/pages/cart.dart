@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:markets/src/repository/user_repository.dart';
 import 'package:mvc_pattern/mvc_pattern.dart';
 
 import '../../generated/l10n.dart';
@@ -39,7 +40,9 @@ class _CartWidgetState extends StateMVC<CartWidget> {
       onWillPop: Helper.of(context).onWillPop,
       child: Scaffold(
         key: _con.scaffoldKey,
-        bottomNavigationBar: CartBottomDetailsWidget(con: _con),
+        bottomNavigationBar: currentUser.value.apiToken != null
+            ? CartBottomDetailsWidget(con: _con)
+            : Navigator.of(context).pushNamed("/Login"),
         appBar: AppBar(
           automaticallyImplyLeading: false,
           leading: IconButton(

@@ -1,38 +1,42 @@
-# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:29
+# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:30
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
-# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:170
+# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:184
 -keep class com.google.android.datatransport.runtime.backends.TransportBackendDiscovery { <init>(); }
-# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:183
+# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:197
 -keep class com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver { <init>(); }
-# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:177
+# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:191
 -keep class com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService { <init>(); }
-# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:155
+# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:161
+-keep class com.google.android.gms.auth.api.signin.RevocationBoundService { <init>(); }
+# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:152
+-keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity { <init>(); }
+# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:169
 -keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
-# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:141
+# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:142
 -keep class com.google.android.gms.measurement.AppMeasurementJobService { <init>(); }
-# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:131
+# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:132
 -keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(); }
-# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:137
+# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:138
 -keep class com.google.android.gms.measurement.AppMeasurementService { <init>(); }
-# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:76
+# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:77
 -keep class com.google.firebase.components.ComponentDiscoveryService { <init>(); }
-# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:123
+# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:124
 -keep class com.google.firebase.iid.FirebaseInstanceIdReceiver { <init>(); }
-# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:106
+# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:107
 -keep class com.google.firebase.messaging.FirebaseMessagingService { <init>(); }
-# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:160
+# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:174
 -keep class com.google.firebase.provider.FirebaseInitProvider { <init>(); }
-# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:118
+# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:119
 -keep class com.pichillilorenzo.flutter_inappbrowser.ChromeCustomTabs.ChromeCustomTabsActivity { <init>(); }
-# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:114
+# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:115
 -keep class com.pichillilorenzo.flutter_inappbrowser.InAppBrowserActivity { <init>(); }
-# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:29
+# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:30
 -keep class com.smartersvision.markets.Application { <init>(); }
-# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:41
+# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:42
 -keep class com.smartersvision.markets.MainActivity { <init>(); }
-# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:71
+# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:72
 -keep class io.flutter.plugins.firebasemessaging.FlutterFirebaseMessagingService { <init>(); }
-# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:147
+# Referenced at H:\grocery-food-pharmacy-store-delivery-mobile-app-with-admin-panel\flutter_application\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:148
 -keep class io.flutter.plugins.urllauncher.WebViewActivity { <init>(); }
 # Referenced at C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\463f3fa1194181e7280ed1f1f3a546ce\appcompat-1.0.0\res\layout\abc_alert_dialog_button_bar_material.xml:43
 # Referenced at C:\Users\Syed Aleem\.gradle\caches\transforms-2\files-2.1\463f3fa1194181e7280ed1f1f3a546ce\appcompat-1.0.0\res\layout\abc_alert_dialog_material.xml:52

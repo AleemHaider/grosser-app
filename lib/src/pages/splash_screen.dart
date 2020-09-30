@@ -29,12 +29,12 @@ class SplashScreenState extends StateMVC<SplashScreen> {
         "You are not Connected to Internet",
         style: TextStyle(fontStyle: FontStyle.italic),
       ),
-      actions: [
-        RaisedButton(
-          onPressed: () {},
-          child: Text('Turn On'),
-        ),
-      ],
+      // actions: [
+      //   RaisedButton(
+      //     onPressed: () {},
+      //     child: Text('Turn On'),
+      //   ),
+      // ],
     );
   }
 
@@ -59,7 +59,7 @@ class SplashScreenState extends StateMVC<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    getConnect();
+    // getConnect();
     // connected ? loadData() : Container();
     // loadData();
   }
@@ -94,16 +94,41 @@ class SplashScreenState extends StateMVC<SplashScreen> {
                   if (connected) {
                     loadData();
 
-                    return Container();
-                  } else {
-                    return Center(
-                      child: Container(
-                        child: Text(
-                          'You are Offline',
-                          style: TextStyle(fontSize: 20, color: Colors.black),
+                    return Container(
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).scaffoldBackgroundColor,
+                      ),
+                      child: Center(
+                        child: Column(
+                          mainAxisSize: MainAxisSize.max,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            Image.asset(
+                              'assets/img/logo.png',
+                              width: 150,
+                              fit: BoxFit.cover,
+                            ),
+                            SizedBox(height: 50),
+                            CircularProgressIndicator(
+                              valueColor: AlwaysStoppedAnimation<Color>(
+                                  Theme.of(context).hintColor),
+                            ),
+                          ],
                         ),
                       ),
                     );
+                  } else {
+                    return buildAlertDialog();
+
+                    // Center(
+                    //   child: Container(
+                    //     child: Text(
+                    //       'You are Offline',
+                    //       style: TextStyle(fontSize: 20, color: Colors.black),
+                    //     ),
+                    //   ),
+                    // );
 
                     // Stack(
                     //   fit: StackFit.expand,
