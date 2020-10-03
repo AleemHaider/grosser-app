@@ -1,5 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:markets/src/elements/AddToCartAlertDialog.dart';
+import 'package:markets/src/repository/user_repository.dart';
 import 'package:mvc_pattern/mvc_pattern.dart';
 import '../controllers/product_controller.dart';
 
@@ -11,9 +13,10 @@ class ProductItemWidget extends StatefulWidget {
   final String heroTag;
   final Product product;
   final RouteArgument routeArgument;
+  final String id;
 
   const ProductItemWidget(
-      {Key key, this.product, this.heroTag, this.routeArgument})
+      {Key key, this.product, this.heroTag, this.routeArgument, this.id})
       : super(key: key);
 
   @override
@@ -26,6 +29,14 @@ class _ProductItemWidgetState extends StateMVC<ProductItemWidget> {
   _ProductItemWidgetState() : super(ProductController()) {
     con = controller;
   }
+  @override
+  void initState() {
+    con.listenForProduct(productId: widget.routeArgument.id);
+    con.listenForCart();
+    con.listenForFavorite(productId: widget.routeArgument.id);
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -137,6 +148,29 @@ class _ProductItemWidgetState extends StateMVC<ProductItemWidget> {
                           IconButton(
                             onPressed: () {
                               con.incrementQuantity();
+                              // con.addToCart(widget.product);
+                              if (currentUser.value.apiToken == null) {
+                                Navigator.of(context).pushNamed("/Login");
+                              } else {
+                                if (con.isSameMarkets(con.product)) {
+                                  con.addToCart(con.product);
+                                } else {
+                                  // showDialog(
+                                  //   context: context,
+                                  //   builder: (BuildContext context) {
+                                  //     // return object of type Dialog
+                                  //     return AddToCartAlertDialogWidget(
+                                  //         oldProduct:
+                                  //             con.carts.elementAt(0)?.product,
+                                  //         newProduct: con.product,
+                                  //         onPressed: (product, {reset: true}) {
+                                  //           return con.addToCart(con.product,
+                                  //               reset: true);
+                                  //         });
+                                  //   },
+                                  // );
+                                }
+                              }
                             },
                             iconSize: 30,
                             padding: EdgeInsets.symmetric(

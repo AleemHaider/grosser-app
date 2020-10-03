@@ -18,9 +18,8 @@ import '../repository/user_repository.dart';
 
 class HomeWidget extends StatefulWidget {
   final GlobalKey<ScaffoldState> parentScaffoldKey;
-  final RouteArgument routeArgument;
-  HomeWidget({Key key, this.parentScaffoldKey, this.routeArgument})
-      : super(key: key);
+  final String id;
+  HomeWidget({Key key, this.parentScaffoldKey, this.id}) : super(key: key);
 
   @override
   _HomeWidgetState createState() => _HomeWidgetState();
@@ -216,7 +215,7 @@ class _HomeWidgetState extends StateMVC<HomeWidget> {
                 case 'top_markets':
                   return CardsCarouselWidget(
                       marketsList: _con.topMarkets,
-                      routeArgument: widget.routeArgument,
+                      id: widget.id,
                       heroTag: 'home_top_markets');
                 case 'trending_week_heading':
                   return ListTile(

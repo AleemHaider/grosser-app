@@ -8,7 +8,8 @@ class ProductsCarouselWidget extends StatelessWidget {
   final List<Product> productsList;
   final String heroTag;
 
-  ProductsCarouselWidget({Key key, this.productsList, this.heroTag}) : super(key: key);
+  ProductsCarouselWidget({Key key, this.productsList, this.heroTag})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {

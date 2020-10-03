@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'package:global_configuration/global_configuration.dart';
 import 'package:http/http.dart' as http;
+import 'package:markets/src/models/cart.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../helpers/custom_trace.dart';
@@ -19,7 +20,8 @@ Future<Stream<Product>> getTrendingProducts(Address address) async {
   Uri uri = Helper.getUri('api/products');
   Map<String, dynamic> _queryParams = {};
   SharedPreferences prefs = await SharedPreferences.getInstance();
-  Filter filter = Filter.fromJSON(json.decode(prefs.getString('filter') ?? '{}'));
+  Filter filter =
+      Filter.fromJSON(json.decode(prefs.getString('filter') ?? '{}'));
   filter.delivery = false;
   filter.open = false;
   _queryParams['limit'] = '6';
@@ -36,7 +38,12 @@ Future<Stream<Product>> getTrendingProducts(Address address) async {
     final client = new http.Client();
     final streamedRest = await client.send(http.Request('get', uri));
 
-    return streamedRest.stream.transform(utf8.decoder).transform(json.decoder).map((data) => Helper.getData(data)).expand((data) => (data as List)).map((data) {
+    return streamedRest.stream
+        .transform(utf8.decoder)
+        .transform(json.decoder)
+        .map((data) => Helper.getData(data))
+        .expand((data) => (data as List))
+        .map((data) {
       return Product.fromJSON(data);
     });
   } catch (e) {
@@ -47,11 +54,18 @@ Future<Stream<Product>> getTrendingProducts(Address address) async {
 
 Future<Stream<Product>> getProduct(String productId) async {
   Uri uri = Helper.getUri('api/products/$productId');
-  uri = uri.replace(queryParameters: {'with': 'market;category;options;optionGroups;productReviews;productReviews.user'});
+  uri = uri.replace(queryParameters: {
+    'with':
+        'market;category;options;optionGroups;productReviews;productReviews.user'
+  });
   try {
     final client = new http.Client();
     final streamedRest = await client.send(http.Request('get', uri));
-    return streamedRest.stream.transform(utf8.decoder).transform(json.decoder).map((data) => Helper.getData(data)).map((data) {
+    return streamedRest.stream
+        .transform(utf8.decoder)
+        .transform(json.decoder)
+        .map((data) => Helper.getData(data))
+        .map((data) {
       return Product.fromJSON(data);
     });
   } catch (e) {
@@ -77,7 +91,12 @@ Future<Stream<Product>> searchProducts(String search, Address address) async {
     final client = new http.Client();
     final streamedRest = await client.send(http.Request('get', uri));
 
-    return streamedRest.stream.transform(utf8.decoder).transform(json.decoder).map((data) => Helper.getData(data)).expand((data) => (data as List)).map((data) {
+    return streamedRest.stream
+        .transform(utf8.decoder)
+        .transform(json.decoder)
+        .map((data) => Helper.getData(data))
+        .expand((data) => (data as List))
+        .map((data) {
       return Product.fromJSON(data);
     });
   } catch (e) {
@@ -90,7 +109,8 @@ Future<Stream<Product>> getProductsByCategory(categoryId) async {
   Uri uri = Helper.getUri('api/products');
   Map<String, dynamic> _queryParams = {};
   SharedPreferences prefs = await SharedPreferences.getInstance();
-  Filter filter = Filter.fromJSON(json.decode(prefs.getString('filter') ?? '{}'));
+  Filter filter =
+      Filter.fromJSON(json.decode(prefs.getString('filter') ?? '{}'));
   _queryParams['with'] = 'market';
   _queryParams['search'] = 'category_id:$categoryId';
   _queryParams['searchFields'] = 'category_id:=';
@@ -101,7 +121,12 @@ Future<Stream<Product>> getProductsByCategory(categoryId) async {
     final client = new http.Client();
     final streamedRest = await client.send(http.Request('get', uri));
 
-    return streamedRest.stream.transform(utf8.decoder).transform(json.decoder).map((data) => Helper.getData(data)).expand((data) => (data as List)).map((data) {
+    return streamedRest.stream
+        .transform(utf8.decoder)
+        .transform(json.decoder)
+        .map((data) => Helper.getData(data))
+        .expand((data) => (data as List))
+        .map((data) {
       return Product.fromJSON(data);
     });
   } catch (e) {
@@ -116,12 +141,17 @@ Future<Stream<Favorite>> isFavoriteProduct(String productId) async {
     return Stream.value(null);
   }
   final String _apiToken = 'api_token=${_user.apiToken}&';
-  final String url = '${GlobalConfiguration().getString('api_base_url')}favorites/exist?${_apiToken}product_id=$productId&user_id=${_user.id}';
+  final String url =
+      '${GlobalConfiguration().getString('api_base_url')}favorites/exist?${_apiToken}product_id=$productId&user_id=${_user.id}';
   try {
     final client = new http.Client();
     final streamedRest = await client.send(http.Request('get', Uri.parse(url)));
 
-    return streamedRest.stream.transform(utf8.decoder).transform(json.decoder).map((data) => Helper.getObjectData(data)).map((data) => Favorite.fromJSON(data));
+    return streamedRest.stream
+        .transform(utf8.decoder)
+        .transform(json.decoder)
+        .map((data) => Helper.getObjectData(data))
+        .map((data) => Favorite.fromJSON(data));
   } catch (e) {
     print(CustomTrace(StackTrace.current, message: url).toString());
     return new Stream.value(new Favorite.fromJSON({}));
@@ -159,7 +189,8 @@ Future<Favorite> addFavorite(Favorite favorite) async {
   }
   final String _apiToken = 'api_token=${_user.apiToken}';
   favorite.userId = _user.id;
-  final String url = '${GlobalConfiguration().getString('api_base_url')}favorites?$_apiToken';
+  final String url =
+      '${GlobalConfiguration().getString('api_base_url')}favorites?$_apiToken';
   try {
     final client = new http.Client();
     final response = await client.post(
@@ -180,7 +211,8 @@ Future<Favorite> removeFavorite(Favorite favorite) async {
     return new Favorite();
   }
   final String _apiToken = 'api_token=${_user.apiToken}';
-  final String url = '${GlobalConfiguration().getString('api_base_url')}favorites/${favorite.id}?$_apiToken';
+  final String url =
+      '${GlobalConfiguration().getString('api_base_url')}favorites/${favorite.id}?$_apiToken';
   try {
     final client = new http.Client();
     final response = await client.delete(
@@ -194,7 +226,29 @@ Future<Favorite> removeFavorite(Favorite favorite) async {
   }
 }
 
-Future<Stream<Product>> getProductsOfMarket(String marketId, {List<String> categories}) async {
+Future<Favorite> removeToCart(Cart cart) async {
+  User _user = userRepo.currentUser.value;
+  if (_user.apiToken == null) {
+    return new Favorite();
+  }
+  final String _apiToken = 'api_token=${_user.apiToken}';
+  final String url =
+      '${GlobalConfiguration().getString('api_base_url')}carts/${cart.id}?$_apiToken';
+  try {
+    final client = new http.Client();
+    final response = await client.delete(
+      url,
+      headers: {HttpHeaders.contentTypeHeader: 'application/json'},
+    );
+    return Favorite.fromJSON(json.decode(response.body)['data']);
+  } catch (e) {
+    print(CustomTrace(StackTrace.current, message: url).toString());
+    return Favorite.fromJSON({});
+  }
+}
+
+Future<Stream<Product>> getProductsOfMarket(String marketId,
+    {List<String> categories}) async {
   Uri uri = Helper.getUri('api/products/categories');
   Map<String, dynamic> query = {
     'with': 'market;category;options;productReviews',
@@ -210,7 +264,12 @@ Future<Stream<Product>> getProductsOfMarket(String marketId, {List<String> categ
     final client = new http.Client();
     final streamedRest = await client.send(http.Request('get', uri));
 
-    return streamedRest.stream.transform(utf8.decoder).transform(json.decoder).map((data) => Helper.getData(data)).expand((data) => (data as List)).map((data) {
+    return streamedRest.stream
+        .transform(utf8.decoder)
+        .transform(json.decoder)
+        .map((data) => Helper.getData(data))
+        .expand((data) => (data as List))
+        .map((data) {
       return Product.fromJSON(data);
     });
   } catch (e) {
@@ -232,7 +291,12 @@ Future<Stream<Product>> getTrendingProductsOfMarket(String marketId) async {
     final client = new http.Client();
     final streamedRest = await client.send(http.Request('get', uri));
 
-    return streamedRest.stream.transform(utf8.decoder).transform(json.decoder).map((data) => Helper.getData(data)).expand((data) => (data as List)).map((data) {
+    return streamedRest.stream
+        .transform(utf8.decoder)
+        .transform(json.decoder)
+        .map((data) => Helper.getData(data))
+        .expand((data) => (data as List))
+        .map((data) {
       return Product.fromJSON(data);
     });
   } catch (e) {
@@ -253,7 +317,12 @@ Future<Stream<Product>> getFeaturedProductsOfMarket(String marketId) async {
     final client = new http.Client();
     final streamedRest = await client.send(http.Request('get', uri));
 
-    return streamedRest.stream.transform(utf8.decoder).transform(json.decoder).map((data) => Helper.getData(data)).expand((data) => (data as List)).map((data) {
+    return streamedRest.stream
+        .transform(utf8.decoder)
+        .transform(json.decoder)
+        .map((data) => Helper.getData(data))
+        .expand((data) => (data as List))
+        .map((data) {
       return Product.fromJSON(data);
     });
   } catch (e) {
@@ -263,7 +332,8 @@ Future<Stream<Product>> getFeaturedProductsOfMarket(String marketId) async {
 }
 
 Future<Review> addProductReview(Review review, Product product) async {
-  final String url = '${GlobalConfiguration().getString('api_base_url')}product_reviews';
+  final String url =
+      '${GlobalConfiguration().getString('api_base_url')}product_reviews';
   final client = new http.Client();
   review.user = userRepo.currentUser.value;
   try {

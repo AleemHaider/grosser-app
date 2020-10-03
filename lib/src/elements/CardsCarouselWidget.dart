@@ -9,11 +9,14 @@ import 'CardWidget.dart';
 class CardsCarouselWidget extends StatefulWidget {
   List<Market> marketsList;
   String heroTag;
-  final RouteArgument routeArgument;
+  final String id;
 
-  CardsCarouselWidget(
-      {Key key, this.marketsList, this.heroTag, this.routeArgument})
-      : super(key: key);
+  CardsCarouselWidget({
+    Key key,
+    this.id,
+    this.marketsList,
+    this.heroTag,
+  }) : super(key: key);
 
   @override
   _CardsCarouselWidgetState createState() => _CardsCarouselWidgetState();
@@ -30,7 +33,7 @@ class _CardsCarouselWidgetState extends State<CardsCarouselWidget> {
     return widget.marketsList.isEmpty
         ? CardsCarouselLoaderWidget()
         : Container(
-            height: 288,
+            height: 378,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: widget.marketsList.length,
@@ -46,7 +49,7 @@ class _CardsCarouselWidgetState extends State<CardsCarouselWidget> {
                   child: CardWidget(
                       market: widget.marketsList.elementAt(index),
                       heroTag: widget.heroTag,
-                      routeArgument: widget.routeArgument),
+                      id: widget.id),
                 );
               },
             ),

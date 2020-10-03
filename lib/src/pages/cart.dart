@@ -103,33 +103,37 @@ class _CartWidgetState extends StateMVC<CartWidget> {
                             ),
                           ),
                         ),
-                        ListView.separated(
-                          padding: EdgeInsets.symmetric(vertical: 15),
-                          scrollDirection: Axis.vertical,
-                          shrinkWrap: true,
-                          primary: true,
-                          itemCount: _con.carts.length,
-                          separatorBuilder: (context, index) {
-                            return SizedBox(height: 15);
-                          },
-                          itemBuilder: (context, index) {
-                            return CartItemWidget(
-                              cart: _con.carts.elementAt(index),
-                              heroTag: 'cart',
-                              increment: () {
-                                _con.incrementQuantity(
-                                    _con.carts.elementAt(index));
+                        Expanded(
+                          child: Container(
+                            child: ListView.separated(
+                              padding: EdgeInsets.symmetric(vertical: 15),
+                              scrollDirection: Axis.vertical,
+                              shrinkWrap: true,
+                              primary: true,
+                              itemCount: _con.carts.length,
+                              separatorBuilder: (context, index) {
+                                return SizedBox(height: 15);
                               },
-                              decrement: () {
-                                _con.decrementQuantity(
-                                    _con.carts.elementAt(index));
+                              itemBuilder: (context, index) {
+                                return CartItemWidget(
+                                  cart: _con.carts.elementAt(index),
+                                  heroTag: 'cart',
+                                  increment: () {
+                                    _con.incrementQuantity(
+                                        _con.carts.elementAt(index));
+                                  },
+                                  decrement: () {
+                                    _con.decrementQuantity(
+                                        _con.carts.elementAt(index));
+                                  },
+                                  onDismissed: () {
+                                    _con.removeFromCart(
+                                        _con.carts.elementAt(index));
+                                  },
+                                );
                               },
-                              onDismissed: () {
-                                _con.removeFromCart(
-                                    _con.carts.elementAt(index));
-                              },
-                            );
-                          },
+                            ),
+                          ),
                         ),
                       ],
                     ),

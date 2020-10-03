@@ -125,6 +125,16 @@ class ProductController extends ControllerMVC {
     });
   }
 
+  // void removeFromCart(Favorite _favorite) async {
+  //   removeFavorite(_favorite).then((value) {
+  //     setState(() {
+  //       this.favorite = new Favorite();
+  //     });
+  //     scaffoldKey?.currentState?.showSnackBar(SnackBar(
+  //       content: Text(S.of(context).thisProductWasRemovedFromFavorites),
+  //     ));
+  //   });
+  // }
   void removeFromFavorite(Favorite _favorite) async {
     removeFavorite(_favorite).then((value) {
       setState(() {

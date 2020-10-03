@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:markets/src/elements/ShoppingCartButtonWidget.dart';
 
 import '../elements/DrawerWidget.dart';
 import '../elements/FilterWidget.dart';
-import '../helpers/helper.dart';
 import '../models/route_argument.dart';
 import '../pages/favorites.dart';
 import '../pages/home.dart';
@@ -15,20 +13,20 @@ import '../pages/orders.dart';
 class PagesWidget extends StatefulWidget {
   dynamic currentTab;
   RouteArgument routeArgument;
+  int id;
   Widget currentPage = HomeWidget();
   final GlobalKey<ScaffoldState> scaffoldKey = new GlobalKey<ScaffoldState>();
 
-  PagesWidget({
-    Key key,
-    this.currentTab,
-  }) {
+  PagesWidget({Key key, this.currentTab, this.id}) {
     if (currentTab != null) {
       if (currentTab is RouteArgument) {
+        print("yes");
+
         routeArgument = currentTab;
         currentTab = int.parse(currentTab.id);
       }
     } else {
-      currentTab = 2;
+      currentTab = 0;
     }
   }
 
@@ -42,11 +40,15 @@ class _PagesWidgetState extends State<PagesWidget> {
   initState() {
     super.initState();
     _selectTab(widget.currentTab);
+    print("check id isssssssssssssssssss:");
+    print(widget.id);
+    print("check id isssssssssssssssssss:");
   }
 
   @override
   void didUpdateWidget(PagesWidget oldWidget) {
     _selectTab(oldWidget.currentTab);
+    print('old widget is:$oldWidget');
     super.didUpdateWidget(oldWidget);
   }
 
@@ -57,7 +59,7 @@ class _PagesWidgetState extends State<PagesWidget> {
         case 0:
           widget.currentPage = HomeWidget(
             parentScaffoldKey: widget.scaffoldKey,
-            routeArgument: widget.routeArgument,
+            id: widget.id.toString(),
           );
 
           break;

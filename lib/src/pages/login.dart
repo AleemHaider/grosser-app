@@ -23,7 +23,7 @@ class _LoginWidgetState extends StateMVC<LoginWidget> {
   void initState() {
     super.initState();
     if (userRepo.currentUser.value.apiToken != null) {
-      Navigator.of(context).pushReplacementNamed('/Pages', arguments: 2);
+      Navigator.of(context).pushReplacementNamed('/Pages', arguments: 0);
     }
   }
 
@@ -200,7 +200,7 @@ class _LoginWidgetState extends StateMVC<LoginWidget> {
                       FlatButton(
                         onPressed: () {
                           Navigator.of(context)
-                              .pushReplacementNamed('/Pages', arguments: 2);
+                              .pushReplacementNamed('/Pages', arguments: 0);
                         },
                         shape: StadiumBorder(),
                         textColor: Theme.of(context).hintColor,

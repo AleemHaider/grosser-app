@@ -13,10 +13,16 @@ import '../repository/settings_repository.dart';
 class CardWidget extends StatefulWidget {
   Market market;
   String heroTag;
-  final RouteArgument routeArgument;
+  final String id;
+  List<Market> marketsList;
 
-  CardWidget({Key key, this.market, this.heroTag, @required this.routeArgument})
-      : super(key: key);
+  CardWidget({
+    Key key,
+    this.id,
+    this.market,
+    this.marketsList,
+    this.heroTag,
+  }) : super(key: key);
 
   @override
   _CardWidgetState createState() => _CardWidgetState();
@@ -32,7 +38,11 @@ class _CardWidgetState extends StateMVC<CardWidget> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    // _con.listenForFeaturedProducts(widget.routeArgument.id);
+    print("market id is");
+    print(widget.market.id);
+    print("market id is");
+
+    _con.listenForFeaturedProducts(widget.market.id);
   }
 
   @override
@@ -157,22 +167,176 @@ class _CardWidgetState extends StateMVC<CardWidget> {
                             children: Helper.getStarsList(
                                 double.parse(widget.market.rate)),
                           ),
-                          Row(
-                            children: [
-                              _con.featuredProducts.length > 0
-                                  ? Container(
-                                      decoration: BoxDecoration(
-                                          image: DecorationImage(
-                                              image: NetworkImage(
-                                        _con.featuredProducts[0].name
-                                            .toString(),
-                                      ))),
-                                    )
-                                  : Container()
-                            ],
-                          )
                         ],
                       ),
+
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              _con.featuredProducts.isNotEmpty
+                                  ? InkWell(
+                                      splashColor: Theme.of(context)
+                                          .accentColor
+                                          .withOpacity(0.08),
+                                      highlightColor: Colors.transparent,
+                                      onTap: () {
+                                        Navigator.of(context).pushNamed(
+                                            '/Product',
+                                            arguments: RouteArgument(
+                                                id: _con.featuredProducts[0].id,
+                                                heroTag: widget.heroTag));
+                                      },
+                                      child: Container(
+                                          height: 50,
+                                          width: 50,
+                                          child: CachedNetworkImage(
+                                              fit: BoxFit.cover,
+                                              imageUrl: _con.featuredProducts[0]
+                                                  .image.url)),
+                                    )
+                                  : Container(),
+                              _con.featuredProducts.length >= 2
+                                  ? InkWell(
+                                      splashColor: Theme.of(context)
+                                          .accentColor
+                                          .withOpacity(0.08),
+                                      highlightColor: Colors.transparent,
+                                      onTap: () {
+                                        Navigator.of(context).pushNamed(
+                                            '/Product',
+                                            arguments: RouteArgument(
+                                                id: _con.featuredProducts[1].id,
+                                                heroTag: widget.heroTag));
+                                      },
+                                      child: Container(
+                                          height: 50,
+                                          width: 50,
+                                          child: CachedNetworkImage(
+                                              fit: BoxFit.cover,
+                                              imageUrl: _con.featuredProducts[1]
+                                                  .image.url)),
+                                    )
+                                  : Container(),
+                              _con.featuredProducts.length >= 3
+                                  ? InkWell(
+                                      splashColor: Theme.of(context)
+                                          .accentColor
+                                          .withOpacity(0.08),
+                                      highlightColor: Colors.transparent,
+                                      onTap: () {
+                                        Navigator.of(context).pushNamed(
+                                            '/Product',
+                                            arguments: RouteArgument(
+                                                id: _con.featuredProducts[2].id,
+                                                heroTag: widget.heroTag));
+                                      },
+                                      child: Container(
+                                          height: 50,
+                                          width: 50,
+                                          child: CachedNetworkImage(
+                                              fit: BoxFit.cover,
+                                              imageUrl: _con.featuredProducts[2]
+                                                  .image.url)),
+                                    )
+                                  : Container(),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: _con.featuredProducts.length >= 4
+                            ? Container(
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    _con.featuredProducts.length >= 4
+                                        ? InkWell(
+                                            splashColor: Theme.of(context)
+                                                .accentColor
+                                                .withOpacity(0.08),
+                                            highlightColor: Colors.transparent,
+                                            onTap: () {
+                                              Navigator.of(context).pushNamed(
+                                                  '/Product',
+                                                  arguments: RouteArgument(
+                                                      id: _con
+                                                          .featuredProducts[3]
+                                                          .id,
+                                                      heroTag: widget.heroTag));
+                                            },
+                                            child: Container(
+                                                height: 50,
+                                                width: 50,
+                                                child: CachedNetworkImage(
+                                                    fit: BoxFit.cover,
+                                                    imageUrl: _con
+                                                        .featuredProducts[3]
+                                                        .image
+                                                        .url)),
+                                          )
+                                        : Container(),
+                                    _con.featuredProducts.length >= 5
+                                        ? InkWell(
+                                            splashColor: Theme.of(context)
+                                                .accentColor
+                                                .withOpacity(0.08),
+                                            highlightColor: Colors.transparent,
+                                            onTap: () {
+                                              Navigator.of(context).pushNamed(
+                                                  '/Product',
+                                                  arguments: RouteArgument(
+                                                      id: _con
+                                                          .featuredProducts[4]
+                                                          .id,
+                                                      heroTag: widget.heroTag));
+                                            },
+                                            child: Container(
+                                                height: 50,
+                                                width: 50,
+                                                child: CachedNetworkImage(
+                                                    fit: BoxFit.cover,
+                                                    imageUrl: _con
+                                                        .featuredProducts[4]
+                                                        .image
+                                                        .url)),
+                                          )
+                                        : Container(),
+                                    _con.featuredProducts.length >= 6
+                                        ? InkWell(
+                                            splashColor: Theme.of(context)
+                                                .accentColor
+                                                .withOpacity(0.08),
+                                            highlightColor: Colors.transparent,
+                                            onTap: () {
+                                              Navigator.of(context).pushNamed(
+                                                  '/Product',
+                                                  arguments: RouteArgument(
+                                                      id: _con
+                                                          .featuredProducts[5]
+                                                          .id,
+                                                      heroTag: widget.heroTag));
+                                            },
+                                            child: Container(
+                                                height: 50,
+                                                width: 50,
+                                                child: CachedNetworkImage(
+                                                    fit: BoxFit.cover,
+                                                    imageUrl: _con
+                                                        .featuredProducts[5]
+                                                        .image
+                                                        .url)),
+                                          )
+                                        : Container(),
+                                  ],
+                                ),
+                              )
+                            : Container(),
+                      )
                       // Text(
                       //   Helper.skipHtml(market.description),
                       //   overflow: TextOverflow.fade,

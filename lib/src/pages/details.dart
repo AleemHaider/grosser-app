@@ -1,12 +1,14 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:markets/src/controllers/product_controller.dart';
+import 'package:markets/src/elements/FeaturedItemWidget.dart';
+import 'package:markets/src/repository/user_repository.dart';
 import 'package:mvc_pattern/mvc_pattern.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../generated/l10n.dart';
 import '../controllers/market_controller.dart';
-import '../controllers/product_controller.dart';
 import '../elements/CircularLoadingWidget.dart';
 import '../elements/GalleryCarouselWidget.dart';
 import '../elements/ProductItemWidget.dart';
@@ -36,11 +38,15 @@ class _DetailsWidgetState extends StateMVC<DetailsWidget> {
 
   @override
   void initState() {
+    print("my id sssssssssssssssssssss:");
+    print(widget.routeArgument.id);
+    print("my id sssssssssssssssssssss:");
+
     _con.listenForMarket(id: widget.routeArgument.id);
     _con.listenForGalleries(widget.routeArgument.id);
     _con.listenForFeaturedProducts(widget.routeArgument.id);
+    _con.listenForProducts(widget.routeArgument.id);
     _con.listenForMarketReviews(id: widget.routeArgument.id);
-
     super.initState();
   }
 
@@ -357,7 +363,7 @@ class _DetailsWidgetState extends StateMVC<DetailsWidget> {
                                   ],
                                 ),
                               ),
-                              _con.featuredProducts.isEmpty
+                              _con.products.isEmpty
                                   ? SizedBox(height: 0)
                                   : Padding(
                                       padding: const EdgeInsets.symmetric(
@@ -371,7 +377,8 @@ class _DetailsWidgetState extends StateMVC<DetailsWidget> {
                                           color: Theme.of(context).hintColor,
                                         ),
                                         title: Text(
-                                          S.of(context).featured_products,
+                                          // 'All Products',
+                                          "${S.of(context).featured_products} ( ${_con.featuredProducts.length} )",
                                           style: Theme.of(context)
                                               .textTheme
                                               .headline4,
@@ -380,23 +387,53 @@ class _DetailsWidgetState extends StateMVC<DetailsWidget> {
                                     ),
                               _con.featuredProducts.isEmpty
                                   ? SizedBox(height: 0)
-                                  : ListView.separated(
-                                      padding:
-                                          EdgeInsets.symmetric(vertical: 10),
-                                      scrollDirection: Axis.vertical,
-                                      shrinkWrap: true,
-                                      primary: false,
-                                      itemCount: _con.featuredProducts.length,
-                                      separatorBuilder: (context, index) {
-                                        return SizedBox(height: 10);
-                                      },
-                                      itemBuilder: (context, index) {
-                                        return ProductItemWidget(
-                                          heroTag: 'details_featured_product',
-                                          product: _con.featuredProducts
-                                              .elementAt(index),
-                                        );
-                                      },
+                                  : FeaturedItemWidget(
+                                      featuredProducts: _con.featuredProducts,
+                                    ),
+                              _con.products.isEmpty
+                                  ? SizedBox(height: 0)
+                                  : Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 20),
+                                      child: ListTile(
+                                        dense: true,
+                                        contentPadding:
+                                            EdgeInsets.symmetric(vertical: 0),
+                                        leading: Icon(
+                                          Icons.shopping_basket,
+                                          color: Theme.of(context).hintColor,
+                                        ),
+                                        title: Text(
+                                          'All Products ( ${_con.products.length} )',
+                                          // S.of(context).featured_products,
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .headline4,
+                                        ),
+                                      ),
+                                    ),
+                              _con.featuredProducts.isEmpty
+                                  ? SizedBox(height: 0)
+                                  : Container(
+                                      child: ListView.separated(
+                                        padding:
+                                            EdgeInsets.symmetric(vertical: 10),
+                                        scrollDirection: Axis.vertical,
+                                        shrinkWrap: true,
+                                        primary: false,
+                                        itemCount: _con.products.length,
+                                        separatorBuilder: (context, index) {
+                                          return SizedBox(height: 10);
+                                        },
+                                        itemBuilder: (context, index) {
+                                          return ProductItemWidget(
+                                            routeArgument: widget.routeArgument,
+                                            heroTag: 'details_featured_product',
+                                            product:
+                                                _con.products.elementAt(index),
+                                          );
+                                        },
+                                      ),
                                     ),
                               SizedBox(height: 100),
                               _con.reviews.isEmpty
